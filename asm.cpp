@@ -2,7 +2,7 @@
 
 using namespace std;
 
-double ticks_per_sec = 3100000000;
+const double ticks_per_sec = 3100000000;
 inline double get_time() {
     uint32_t lo, hi;
     asm volatile ("rdtsc" : "=a" (lo), "=d" (hi));
